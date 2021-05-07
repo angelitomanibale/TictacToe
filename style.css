@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ 
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background:brown;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    margin-bottom: 2em;
+}
+
+
+.turnboard{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background:brown;
+    margin: auto;
+    margin-bottom: 3em;
+    height: 3.4rem;
+    width: 50%;
+}
+.playarea{
+    width: 90%;
+}
+
+.tictactoeboard{ 
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+    height: 25rem
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.4rem;
+    height: 100%;
+    width: 100%;
+}
+
+#boxOne{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#boxTwo{
+    border-right: 2px solid;
+    border-left: 2px solid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#boxThree{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#boxFour{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#boxFive{
+    border: 2px solid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#boxSix{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#boxSeven{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#boxEight{
+    border-left: 2px solid;
+    border-right: 2px solid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background:brown;
+    width: 100%;
+    height: 10vh;
+    color: white;
+}
+
+@media (min-width: 562px) {
+    .tictactoeboard{ 
+        height: 30rem
+    }
+}
+
+.winner{
+    position: absolute;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color:brown;
+    color: white;
+    height: 40%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.display{
+    z-index: -1;
+    opacity: 0;
+}
+
+#playagain{
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    background: brown;
+    width: 100%;
+    height: 100%;
+}
